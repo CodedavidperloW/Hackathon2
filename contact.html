@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="volunteers.html">Volunteers</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div>
+            <img src="/images/children_smiling.jpg">
+        </div>
+        <form action="/submit" method="GET">
+            <div class="instructions">
+                <div class="personal-information">
+                    <ol>
+                        <p>Drag the Following Files to the Submission Area Below</p>
+                        <li>A Copy of Your Israeli Identity</li>
+                        <li>Relevant Army Certificates</li>
+                        <li>National Service Details</li>
+                    </ol>
+        
+                    <label class="name" for="firstName">First Name:</label>
+                    <input type="text" id="firstName" name="firstName" required><br>
+        
+                    <label class="name" for="lastName">Last Name:</label>
+                    <input type="text" id="lastName" name="lastName" required><br>
+        
+                    <label for="DOB">Date of Birth:</label>
+                    <input type="date" id="DOB" name="DOB" required><br>
+        
+                    <label>Gender:</label>
+                    <label for="male">Male</label>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="female">Female</label>
+                    <input type="radio" id="female" name="gender" value="female"><br>
+        
+                    <label for="reason">Why do you want to volunteer?</label><br>
+                    <textarea id="reason" name="reason" rows="4" required></textarea>
+        
+                    <div class="talents">
+                        <label for="talents">How do you want to help?</label><br>
+        
+                        <input type="checkbox" id="cooking" name="specialTalents" value="cooking">
+                        <label for="cooking">Cooking</label>
+        
+                        <input type="checkbox" id="cleaning" name="talents" value="cleaning">
+                        <label for="cleaning">Cleaning</label>
+        
+                        <input type="checkbox" id="childCare" name="talents" value="childCare">
+                        <label for="childCare">Child Care</label><br>
+        
+                        <input type="checkbox" id="homework" name="talents" value="homework">
+                        <label for="homework">Homework</label>
+        
+                        <input type="checkbox" id="hobbies" name="talents" value="hobbies">
+                        <label for="hobby">Teach a Hobby</label>
+                    
+                        <input type="checkbox" id="sports" name="talents" value="hobbies">
+                        <label for="hobby">Teach a Hobby</label>
+                    
+                    
+                    </div>
+                </div>
+        
+                <div class="container-two">
+                    <div class="header-container">Israeli ID, Army Service, National Service</div>
+                    <div class="files-to-drop">
+                        <div class="small-images">
+                            <img src="/images/Teudat-zehut.jpg">
+                            <img src="/images/idf-logo-post.jpg">
+                            <img src="/images/nationalService.png">
+                        </div>
+                        <div class="text-drag-drop"> Drag Files Here</div>
+                    </div>
+                </div>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+        
+
+
+
+
+        <script src="contact.js"></script>
+</body>
+
+</html>

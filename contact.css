@@ -1,0 +1,133 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Navigation Styles */
+nav {
+    background-color: #333;
+    padding: 10px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+li {
+    margin-right: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #ffcc00; /* Change the color on hover if desired */
+}
+
+/* Container Styles */
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 20px;
+}
+
+.container img {
+    width: 15vw;
+    height: 45vh;
+}
+
+.instructions {
+    border: 1px solid black;
+    background-color: lightblue;
+    height: 55vh;
+    max-width: 40vw;
+    flex-grow: 1;
+    margin-left: 20px;
+    padding: 1rem; /* Added padding for consistency */
+}
+
+ol {
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+/* Container Two Styles */
+.container-two, .header-container, .files-to-drop, .small-images, .text-drag-drop {
+    border: 1px solid black;
+}
+
+.container-two {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: fit-content;
+    margin: 0 auto;
+    padding: 1rem; /* Added padding for consistency */
+    margin-top: 16.5vh;
+    width: fit-content;
+}
+
+.header-container {
+    padding: 1rem;
+    font-size: 1.2rem; /* Adjust font size */
+    font-weight: bold; /* Adjust font weight */
+}
+
+.small-images img {
+    width: 10vw;
+    height: 12vh;
+    padding: 1rem;
+    border: 1px solid black;
+}
+
+.text-drag-drop {
+    height: 15vh;
+    padding: 1rem; /* Added padding for consistency */
+}
+
+/* Form Styles */
+.name {
+    color: yellow;
+    font-weight: bold; /* Adjust font weight */
+}
+
+.talents {
+    display: block;
+}
+
+form {
+    border: 2px solid black;
+}
+
+.text-drag-drop {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.8); /* Add a background color with some transparency */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.text-drag-drop {
+    position: relative; /* Use relative positioning */
+    height: 15vh; /* Set a fixed height */
+    background-color: lightgray; /* Add a background color or adjust as needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
